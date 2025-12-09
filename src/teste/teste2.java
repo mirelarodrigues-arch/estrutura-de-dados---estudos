@@ -10,7 +10,13 @@ public class teste2 {
         vetor.adiciona("Elemento 2");
         vetor.adiciona("Elemento 3");
 
+        //tamanho
+        System.out.println(vetor.tamanho());
 
+        //
+        System.out.println(vetor.toString());
+
+        //posições
         vetor.imprimir();
 
 

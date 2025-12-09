@@ -1,5 +1,7 @@
 package Vetores;
 
+import java.util.Arrays;
+
 public class Vetor {
     //atributo que sera o vetor
     private String[] elementos;
@@ -32,7 +34,27 @@ public class Vetor {
         }
     }
 
-  /*
+    public int tamanho(){
+       return this.tamanho;
+    }
+
+      //retorna os elementos do array
+      public String toString() {
+        StringBuilder s = new StringBuilder();
+        s.append("[");
+
+        for(int i= 0; i< this.tamanho-1; i++){
+            s.append(this.elementos[i]);
+            s.append(", ");
+        }
+        if(this.tamanho>0){
+            s.append(this.elementos[this.tamanho-1]);
+        }
+        s.append("]");
+        return s.toString();
+    }
+
+    /*
     //método adcicionar elemento
     public void adiciona(String elemento){
         //percorre todo o vetor
