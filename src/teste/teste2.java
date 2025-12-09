@@ -19,6 +19,9 @@ public class teste2 {
         //posições
         vetor.imprimir();
 
+        System.out.println("Posição solicitada:");;
+        System.out.println(vetor.busca(90));;
+
 
       /*  try{
             vetor.adiciona("Elemento 1");
