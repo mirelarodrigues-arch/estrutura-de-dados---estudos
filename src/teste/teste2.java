@@ -2,6 +2,8 @@ package teste;
 
 import Vetores.Vetor;
 
+import java.sql.SQLOutput;
+
 public class teste2 {
     public static void main(String[] args) {
         Vetor vetor = new Vetor(5);
@@ -19,8 +21,12 @@ public class teste2 {
         //posições
         vetor.imprimir();
 
-        System.out.println("Posição solicitada:");;
-        System.out.println(vetor.busca(90));;
+        //System.out.println("Posição solicitada:");;
+        //System.out.println(vetor.busca(2));;
+
+        System.out.println("Verificando posição");
+        System.out.println(vetor.verifica("Elemento 1"));
+        System.out.println(vetor.verifica("Elemento 4"));
 
 
       /*  try{

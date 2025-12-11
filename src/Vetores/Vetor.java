@@ -36,6 +36,7 @@ public class Vetor {
         }
     }
 
+    //Buscar por um elemento
     public String busca(int posicao){
         // se a posição NÃO existir (for inválida), lança uma exception
         if(!(posicao >= 0 && posicao < tamanho)){
@@ -45,8 +46,19 @@ public class Vetor {
         return this.elementos[posicao];
     }
 
+        //Verificar se o elemento existe no vetor
+       public int verifica(String elemento) {
+            for (int i = 0; i < this.tamanho; i++) {
+                if (this.elementos[i].equals(elemento)) {
+                    return i;
+                }
+            }
+            return -1;
+            //retorna -1 pq é uma posição que não existe no vetor
+        }
     public int tamanho(){
-       return this.tamanho;
+
+        return this.tamanho;
     }
 
       //RETORNA OS ELEMENTOS COM ARRAY
