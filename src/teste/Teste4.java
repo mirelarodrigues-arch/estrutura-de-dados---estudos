@@ -11,5 +11,17 @@ public class Teste4 {
         vetor.adiciona("f");
 
         System.out.println(vetor);
+        //remove a posição
+        vetor.remove(1);
+        System.out.println(vetor);
+
+        //remove o elemento
+        int pos = vetor.verifica("e");
+        if(pos >= 0){
+            vetor.remove(pos);
+        }else{
+            System.out.println("Elemento não existe no vetor");
+        }
+        System.out.println(vetor);
     }
 }
